@@ -1,0 +1,73 @@
+[2026-02-23T03:43:00.893+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: s3_to_snowflake.download_s3 scheduled__2026-02-23T03:42:00+00:00 [queued]>
+[2026-02-23T03:43:00.902+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: s3_to_snowflake.download_s3 scheduled__2026-02-23T03:42:00+00:00 [queued]>
+[2026-02-23T03:43:00.902+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2026-02-23T03:43:00.915+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): download_s3> on 2026-02-23 03:42:00+00:00
+[2026-02-23T03:43:00.927+0000] {standard_task_runner.py:60} INFO - Started process 418 to run task
+[2026-02-23T03:43:00.930+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 's3_to_snowflake', 'download_s3', 'scheduled__2026-02-23T03:42:00+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/s3_to_snowflake.py', '--cfg-path', '/tmp/tmpgl6_z4tu']
+[2026-02-23T03:43:00.934+0000] {standard_task_runner.py:88} INFO - Job 20: Subtask download_s3
+[2026-02-23T03:43:00.994+0000] {task_command.py:423} INFO - Running <TaskInstance: s3_to_snowflake.download_s3 scheduled__2026-02-23T03:42:00+00:00 [running]> on host 67980a8ff57b
+[2026-02-23T03:43:01.261+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='s3_to_snowflake' AIRFLOW_CTX_TASK_ID='download_s3' AIRFLOW_CTX_EXECUTION_DATE='2026-02-23T03:42:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-23T03:42:00+00:00'
+[2026-02-23T03:43:02.032+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/parsers.py", line 505, in _parse_xml_string_to_dom
+    parser.feed(xml_string)
+xml.etree.ElementTree.ParseError: not well-formed (invalid token): line 14, column 26
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/s3_to_snowflake.py", line 34, in download_from_s3
+    objects = s3.list_objects_v2(Bucket=s3_bucket).get("Contents",[])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/client.py", line 553, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/client.py", line 989, in _make_api_call
+    http, parsed_response = self._make_request(
+                            ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/client.py", line 1015, in _make_request
+    return self._endpoint.make_request(operation_model, request_dict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/endpoint.py", line 119, in make_request
+    return self._send_request(request_dict, operation_model)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/endpoint.py", line 199, in _send_request
+    success_response, exception = self._get_response(
+                                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/endpoint.py", line 241, in _get_response
+    success_response, exception = self._do_get_response(
+                                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/endpoint.py", line 308, in _do_get_response
+    parsed_response = parser.parse(
+                      ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/parsers.py", line 252, in parse
+    parsed = self._do_parse(response, shape)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/parsers.py", line 894, in _do_parse
+    self._add_modeled_parse(response, shape, final_parsed)
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/parsers.py", line 904, in _add_modeled_parse
+    self._parse_payload(response, shape, member_shapes, final_parsed)
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/parsers.py", line 945, in _parse_payload
+    original_parsed = self._initial_body_parse(response['body'])
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/parsers.py", line 1044, in _initial_body_parse
+    return self._parse_xml_string_to_dom(xml_string)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/parsers.py", line 508, in _parse_xml_string_to_dom
+    raise ResponseParserError(
+botocore.parsers.ResponseParserError: Unable to parse response (not well-formed (invalid token): line 14, column 26), invalid XML received. Further retries may succeed:
+b'\n<!DOCTYPE html>\n<html lang="en">\n<head><style >html { background-color: #ffffff; }</style></head>\n<body class="">\n  <script type="text/javascript">\n    (function() {\n        var redirectUrl = function getHashArgsRedirectUrl(location, hashArgsQueryParam, oauthStartQueryParam, oauthFlowStartTime) {\n  const hashArgs = "#" + (location.href.split("#")[1] || "");\n  const redirectUrl = new URL(location.href);\n  redirectUrl.pathname = location.pathname.replace(/\\\\/g, "/").replace(/\\/\\/+/g, "/");\n  redirectUrl.hash = "";\n  redirectUrl.searchParams.append(hashArgsQueryParam, hashArgs);\n  if (oauthFlowStartTime && oauthStartQueryParam) {\n    redirectUrl.searchParams.append(\n      oauthStartQueryParam,\n      oauthFlowStartTime.toString()\n    );\n  }\n  return redirectUrl;\n};\n        window.location.replace(redirectUrl(window.location, "hashArgs", "oauthStart", 1771818182486).toString());\n    })();\n  </script>\n  <noscript>\n    <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 1em; font-family: sans-serif">\n      Your web browser must have JavaScript enabled\n      in order for this application to display correctly.\n    </div>\n  </noscript>\n</body>\n</html>\n'
+[2026-02-23T03:43:02.051+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=s3_to_snowflake, task_id=download_s3, execution_date=20260223T034200, start_date=20260223T034300, end_date=20260223T034302
+[2026-02-23T03:43:02.067+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 20 for task download_s3 (Unable to parse response (not well-formed (invalid token): line 14, column 26), invalid XML received. Further retries may succeed:
+b'\n<!DOCTYPE html>\n<html lang="en">\n<head><style >html { background-color: #ffffff; }</style></head>\n<body class="">\n  <script type="text/javascript">\n    (function() {\n        var redirectUrl = function getHashArgsRedirectUrl(location, hashArgsQueryParam, oauthStartQueryParam, oauthFlowStartTime) {\n  const hashArgs = "#" + (location.href.split("#")[1] || "");\n  const redirectUrl = new URL(location.href);\n  redirectUrl.pathname = location.pathname.replace(/\\\\/g, "/").replace(/\\/\\/+/g, "/");\n  redirectUrl.hash = "";\n  redirectUrl.searchParams.append(hashArgsQueryParam, hashArgs);\n  if (oauthFlowStartTime && oauthStartQueryParam) {\n    redirectUrl.searchParams.append(\n      oauthStartQueryParam,\n      oauthFlowStartTime.toString()\n    );\n  }\n  return redirectUrl;\n};\n        window.location.replace(redirectUrl(window.location, "hashArgs", "oauthStart", 1771818182486).toString());\n    })();\n  </script>\n  <noscript>\n    <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 1em; font-family: sans-serif">\n      Your web browser must have JavaScript enabled\n      in order for this application to display correctly.\n    </div>\n  </noscript>\n</body>\n</html>\n'; 418)
+[2026-02-23T03:43:02.111+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-02-23T03:43:02.133+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

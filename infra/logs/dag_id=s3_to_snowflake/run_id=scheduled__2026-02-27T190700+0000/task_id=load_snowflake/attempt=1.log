@@ -1,0 +1,171 @@
+[2026-02-27T19:08:26.693+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: s3_to_snowflake.load_snowflake scheduled__2026-02-27T19:07:00+00:00 [queued]>
+[2026-02-27T19:08:26.708+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: s3_to_snowflake.load_snowflake scheduled__2026-02-27T19:07:00+00:00 [queued]>
+[2026-02-27T19:08:26.709+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2026-02-27T19:08:26.727+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): load_snowflake> on 2026-02-27 19:07:00+00:00
+[2026-02-27T19:08:26.737+0000] {standard_task_runner.py:60} INFO - Started process 5158 to run task
+[2026-02-27T19:08:26.742+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 's3_to_snowflake', 'load_snowflake', 'scheduled__2026-02-27T19:07:00+00:00', '--job-id', '176', '--raw', '--subdir', 'DAGS_FOLDER/s3_to_snowflake.py', '--cfg-path', '/tmp/tmptgklosfi']
+[2026-02-27T19:08:26.747+0000] {standard_task_runner.py:88} INFO - Job 176: Subtask load_snowflake
+[2026-02-27T19:08:26.841+0000] {task_command.py:423} INFO - Running <TaskInstance: s3_to_snowflake.load_snowflake scheduled__2026-02-27T19:07:00+00:00 [running]> on host 21d6aced11b5
+[2026-02-27T19:08:27.216+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='s3_to_snowflake' AIRFLOW_CTX_TASK_ID='load_snowflake' AIRFLOW_CTX_EXECUTION_DATE='2026-02-27T19:07:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-27T19:07:00+00:00'
+[2026-02-27T19:08:27.235+0000] {connection.py:370} INFO - Snowflake Connector for Python Version: 3.6.0, Python Version: 3.11.8, Platform: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36
+[2026-02-27T19:08:27.237+0000] {connection.py:1171} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2026-02-27T19:08:27.968+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463612....]
+[2026-02-27T19:08:28.188+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:28.808+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463612.json to Snowflake stage
+[2026-02-27T19:08:28.809+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463645....]
+[2026-02-27T19:08:29.038+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:29.216+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463645.json to Snowflake stage
+[2026-02-27T19:08:29.217+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463678....]
+[2026-02-27T19:08:29.427+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:29.605+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463678.json to Snowflake stage
+[2026-02-27T19:08:29.606+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463711....]
+[2026-02-27T19:08:29.797+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:29.966+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463711.json to Snowflake stage
+[2026-02-27T19:08:29.967+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463744....]
+[2026-02-27T19:08:30.169+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:30.340+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463744.json to Snowflake stage
+[2026-02-27T19:08:30.341+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463777....]
+[2026-02-27T19:08:30.524+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:30.691+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463777.json to Snowflake stage
+[2026-02-27T19:08:30.692+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463810....]
+[2026-02-27T19:08:30.884+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:31.049+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463810.json to Snowflake stage
+[2026-02-27T19:08:31.050+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463843....]
+[2026-02-27T19:08:31.247+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:31.416+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463843.json to Snowflake stage
+[2026-02-27T19:08:31.417+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463876....]
+[2026-02-27T19:08:31.600+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:31.767+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463876.json to Snowflake stage
+[2026-02-27T19:08:31.768+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463909....]
+[2026-02-27T19:08:31.960+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:32.128+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463909.json to Snowflake stage
+[2026-02-27T19:08:32.129+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463605...]
+[2026-02-27T19:08:32.309+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:32.474+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463605.json to Snowflake stage
+[2026-02-27T19:08:32.475+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463638...]
+[2026-02-27T19:08:32.667+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:32.836+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463638.json to Snowflake stage
+[2026-02-27T19:08:32.837+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463671...]
+[2026-02-27T19:08:33.037+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:33.207+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463671.json to Snowflake stage
+[2026-02-27T19:08:33.208+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463704...]
+[2026-02-27T19:08:33.390+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:33.556+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463704.json to Snowflake stage
+[2026-02-27T19:08:33.557+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463737...]
+[2026-02-27T19:08:33.750+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:33.917+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463737.json to Snowflake stage
+[2026-02-27T19:08:33.918+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463770...]
+[2026-02-27T19:08:34.117+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:34.282+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463770.json to Snowflake stage
+[2026-02-27T19:08:34.283+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463803...]
+[2026-02-27T19:08:34.465+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:34.632+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463803.json to Snowflake stage
+[2026-02-27T19:08:34.633+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463836...]
+[2026-02-27T19:08:34.823+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:34.990+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463836.json to Snowflake stage
+[2026-02-27T19:08:34.991+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463869...]
+[2026-02-27T19:08:35.190+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:35.359+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463869.json to Snowflake stage
+[2026-02-27T19:08:35.360+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463902...]
+[2026-02-27T19:08:35.543+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:35.710+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463902.json to Snowflake stage
+[2026-02-27T19:08:35.712+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463619....]
+[2026-02-27T19:08:35.901+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:36.067+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463619.json to Snowflake stage
+[2026-02-27T19:08:36.068+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463651....]
+[2026-02-27T19:08:36.270+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:36.435+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463651.json to Snowflake stage
+[2026-02-27T19:08:36.436+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463684....]
+[2026-02-27T19:08:36.617+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:36.783+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463684.json to Snowflake stage
+[2026-02-27T19:08:36.784+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463718....]
+[2026-02-27T19:08:36.972+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:37.138+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463718.json to Snowflake stage
+[2026-02-27T19:08:37.139+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463750....]
+[2026-02-27T19:08:37.343+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:37.503+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463750.json to Snowflake stage
+[2026-02-27T19:08:37.504+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463783....]
+[2026-02-27T19:08:37.694+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:37.864+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463783.json to Snowflake stage
+[2026-02-27T19:08:37.865+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463816....]
+[2026-02-27T19:08:38.063+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:38.237+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463816.json to Snowflake stage
+[2026-02-27T19:08:38.238+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463849....]
+[2026-02-27T19:08:38.422+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:38.595+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463849.json to Snowflake stage
+[2026-02-27T19:08:38.596+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463882....]
+[2026-02-27T19:08:38.788+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:38.956+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463882.json to Snowflake stage
+[2026-02-27T19:08:38.957+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463916....]
+[2026-02-27T19:08:39.156+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:39.326+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463916.json to Snowflake stage
+[2026-02-27T19:08:39.327+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463592....]
+[2026-02-27T19:08:39.510+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:39.681+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463592.json to Snowflake stage
+[2026-02-27T19:08:39.682+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463625....]
+[2026-02-27T19:08:39.877+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:40.050+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463625.json to Snowflake stage
+[2026-02-27T19:08:40.052+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463658....]
+[2026-02-27T19:08:40.253+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:40.423+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463658.json to Snowflake stage
+[2026-02-27T19:08:40.424+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463691....]
+[2026-02-27T19:08:40.606+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:40.773+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463691.json to Snowflake stage
+[2026-02-27T19:08:40.774+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463724....]
+[2026-02-27T19:08:40.963+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:41.136+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463724.json to Snowflake stage
+[2026-02-27T19:08:41.137+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463757....]
+[2026-02-27T19:08:41.334+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:41.504+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463757.json to Snowflake stage
+[2026-02-27T19:08:41.505+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463790....]
+[2026-02-27T19:08:41.700+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:41.872+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463790.json to Snowflake stage
+[2026-02-27T19:08:41.873+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463823....]
+[2026-02-27T19:08:42.077+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:42.245+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463823.json to Snowflake stage
+[2026-02-27T19:08:42.246+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463856....]
+[2026-02-27T19:08:42.430+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:42.598+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463856.json to Snowflake stage
+[2026-02-27T19:08:42.599+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463889....]
+[2026-02-27T19:08:42.791+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:42.962+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463889.json to Snowflake stage
+[2026-02-27T19:08:42.962+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463599....]
+[2026-02-27T19:08:43.182+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:43.347+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463599.json to Snowflake stage
+[2026-02-27T19:08:43.348+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463632....]
+[2026-02-27T19:08:43.541+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:43.709+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463632.json to Snowflake stage
+[2026-02-27T19:08:43.710+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463665....]
+[2026-02-27T19:08:43.911+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:44.076+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463665.json to Snowflake stage
+[2026-02-27T19:08:44.078+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463698....]
+[2026-02-27T19:08:44.261+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:44.434+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463698.json to Snowflake stage
+[2026-02-27T19:08:44.435+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463731....]
+[2026-02-27T19:08:44.629+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:44.801+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463731.json to Snowflake stage
+[2026-02-27T19:08:44.802+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463764....]
+[2026-02-27T19:08:45.003+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:45.171+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463764.json to Snowflake stage
+[2026-02-27T19:08:45.172+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463797....]
+[2026-02-27T19:08:45.355+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:45.519+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463797.json to Snowflake stage
+[2026-02-27T19:08:45.520+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463830....]
+[2026-02-27T19:08:45.712+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:45.883+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463830.json to Snowflake stage
+[2026-02-27T19:08:45.884+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463862....]
+[2026-02-27T19:08:46.085+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:46.252+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463862.json to Snowflake stage
+[2026-02-27T19:08:46.252+0000] {cursor.py:1028} INFO - query: [PUT file://D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463895....]
+[2026-02-27T19:08:46.436+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:46.603+0000] {logging_mixin.py:188} INFO - Uploaded D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463895.json to Snowflake stage
+[2026-02-27T19:08:46.604+0000] {cursor.py:1028} INFO - query: [COPY INTO bronze_stock_quotes_raw FROM @%bronze_stock_quotes_raw FILE_FORMAT =(T...]
+[2026-02-27T19:08:47.396+0000] {cursor.py:1041} INFO - query execution done
+[2026-02-27T19:08:47.397+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2026-02-27T19:08:47.397+0000] {logging_mixin.py:188} INFO - COPY INTO executed
+[2026-02-27T19:08:47.398+0000] {connection.py:718} INFO - closed
+[2026-02-27T19:08:47.560+0000] {connection.py:724} INFO - No async queries seem to be running, deleting session
+[2026-02-27T19:08:47.732+0000] {python.py:201} INFO - Done. Returned value was: None
+[2026-02-27T19:08:47.744+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=s3_to_snowflake, task_id=load_snowflake, execution_date=20260227T190700, start_date=20260227T190826, end_date=20260227T190847
+[2026-02-27T19:08:47.799+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-02-27T19:08:47.816+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

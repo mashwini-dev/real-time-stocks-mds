@@ -1,0 +1,13 @@
+dbt_stocks:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "{{ 'kj92404.me-central-1.aws' }}"
+      user: "{{ 'ashwinidmsf' }}"
+      password: "{{ 'sfPractice@007' }}"
+      role: "{{ 'ACCOUNTADMIN' }}"
+      warehouse: "{{ 'COMPUTE_WH' }}"
+      database: "{{ 'STOCKS_MDS' }}"
+      schema: "{{ 'COMMON' }}"
+      threads: 4

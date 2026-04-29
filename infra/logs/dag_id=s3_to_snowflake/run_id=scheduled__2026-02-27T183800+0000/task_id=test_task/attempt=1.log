@@ -1,0 +1,30 @@
+[2026-02-27T18:39:01.339+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: s3_to_snowflake.test_task scheduled__2026-02-27T18:38:00+00:00 [queued]>
+[2026-02-27T18:39:01.350+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: s3_to_snowflake.test_task scheduled__2026-02-27T18:38:00+00:00 [queued]>
+[2026-02-27T18:39:01.352+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2026-02-27T18:39:01.368+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): test_task> on 2026-02-27 18:38:00+00:00
+[2026-02-27T18:39:01.377+0000] {standard_task_runner.py:60} INFO - Started process 2575 to run task
+[2026-02-27T18:39:01.384+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 's3_to_snowflake', 'test_task', 'scheduled__2026-02-27T18:38:00+00:00', '--job-id', '112', '--raw', '--subdir', 'DAGS_FOLDER/s3_to_snowflake.py', '--cfg-path', '/tmp/tmpbjyj_4if']
+[2026-02-27T18:39:01.389+0000] {standard_task_runner.py:88} INFO - Job 112: Subtask test_task
+[2026-02-27T18:39:01.477+0000] {task_command.py:423} INFO - Running <TaskInstance: s3_to_snowflake.test_task scheduled__2026-02-27T18:38:00+00:00 [running]> on host 21d6aced11b5
+[2026-02-27T18:39:01.591+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='s3_to_snowflake' AIRFLOW_CTX_TASK_ID='test_task' AIRFLOW_CTX_EXECUTION_DATE='2026-02-27T18:38:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-27T18:38:00+00:00'
+[2026-02-27T18:39:01.607+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/s3_to_snowflake.py", line 32, in my_task
+    symbols = Variable.get("stock_symbols", deserialize_json=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable stock_symbols does not exist'
+[2026-02-27T18:39:01.629+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=s3_to_snowflake, task_id=test_task, execution_date=20260227T183800, start_date=20260227T183901, end_date=20260227T183901
+[2026-02-27T18:39:01.645+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 112 for task test_task ('Variable stock_symbols does not exist'; 2575)
+[2026-02-27T18:39:01.679+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-02-27T18:39:01.704+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

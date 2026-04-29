@@ -1,0 +1,175 @@
+[2026-02-27T18:53:01.432+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: s3_to_snowflake.download_s3 scheduled__2026-02-27T18:52:00+00:00 [queued]>
+[2026-02-27T18:53:01.440+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: s3_to_snowflake.download_s3 scheduled__2026-02-27T18:52:00+00:00 [queued]>
+[2026-02-27T18:53:01.441+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2026-02-27T18:53:01.452+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): download_s3> on 2026-02-27 18:52:00+00:00
+[2026-02-27T18:53:01.461+0000] {standard_task_runner.py:60} INFO - Started process 2937 to run task
+[2026-02-27T18:53:01.465+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 's3_to_snowflake', 'download_s3', 'scheduled__2026-02-27T18:52:00+00:00', '--job-id', '150', '--raw', '--subdir', 'DAGS_FOLDER/s3_to_snowflake.py', '--cfg-path', '/tmp/tmpikn18ur4']
+[2026-02-27T18:53:01.469+0000] {standard_task_runner.py:88} INFO - Job 150: Subtask download_s3
+[2026-02-27T18:53:01.537+0000] {task_command.py:423} INFO - Running <TaskInstance: s3_to_snowflake.download_s3 scheduled__2026-02-27T18:52:00+00:00 [running]> on host 21d6aced11b5
+[2026-02-27T18:53:01.892+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='s3_to_snowflake' AIRFLOW_CTX_TASK_ID='download_s3' AIRFLOW_CTX_EXECUTION_DATE='2026-02-27T18:52:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-27T18:52:00+00:00'
+[2026-02-27T18:53:01.913+0000] {credentials.py:1147} INFO - Found credentials in environment variables.
+[2026-02-27T18:53:01.997+0000] {logging_mixin.py:188} INFO - in the function************************
+[2026-02-27T18:53:02.006+0000] {logging_mixin.py:188} INFO - 
+Processing prefix: bronze/AAPL/
+[2026-02-27T18:53:03.346+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AAPL/1771463612.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463612.json
+[2026-02-27T18:53:03.808+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AAPL/1771463645.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463645.json
+[2026-02-27T18:53:04.272+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AAPL/1771463678.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463678.json
+[2026-02-27T18:53:04.740+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AAPL/1771463711.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463711.json
+[2026-02-27T18:53:05.205+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AAPL/1771463744.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463744.json
+[2026-02-27T18:53:05.666+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AAPL/1771463777.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463777.json
+[2026-02-27T18:53:06.139+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AAPL/1771463810.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463810.json
+[2026-02-27T18:53:06.604+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AAPL/1771463843.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463843.json
+[2026-02-27T18:53:07.069+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AAPL/1771463876.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463876.json
+[2026-02-27T18:53:07.545+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AAPL/1771463909.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463909.json
+[2026-02-27T18:53:07.546+0000] {logging_mixin.py:188} INFO - 
+Processing prefix: bronze/GOOGL/
+[2026-02-27T18:53:08.253+0000] {logging_mixin.py:188} INFO - Downloaded bronze/GOOGL/1771463605.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463605.json
+[2026-02-27T18:53:08.727+0000] {logging_mixin.py:188} INFO - Downloaded bronze/GOOGL/1771463638.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463638.json
+[2026-02-27T18:53:09.195+0000] {logging_mixin.py:188} INFO - Downloaded bronze/GOOGL/1771463671.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463671.json
+[2026-02-27T18:53:09.664+0000] {logging_mixin.py:188} INFO - Downloaded bronze/GOOGL/1771463704.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463704.json
+[2026-02-27T18:53:10.139+0000] {logging_mixin.py:188} INFO - Downloaded bronze/GOOGL/1771463737.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463737.json
+[2026-02-27T18:53:10.606+0000] {logging_mixin.py:188} INFO - Downloaded bronze/GOOGL/1771463770.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463770.json
+[2026-02-27T18:53:11.089+0000] {logging_mixin.py:188} INFO - Downloaded bronze/GOOGL/1771463803.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463803.json
+[2026-02-27T18:53:11.563+0000] {logging_mixin.py:188} INFO - Downloaded bronze/GOOGL/1771463836.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463836.json
+[2026-02-27T18:53:12.037+0000] {logging_mixin.py:188} INFO - Downloaded bronze/GOOGL/1771463869.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463869.json
+[2026-02-27T18:53:12.511+0000] {logging_mixin.py:188} INFO - Downloaded bronze/GOOGL/1771463902.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463902.json
+[2026-02-27T18:53:12.512+0000] {logging_mixin.py:188} INFO - 
+Processing prefix: bronze/AMZN/
+[2026-02-27T18:53:13.209+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AMZN/1771463619.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463619.json
+[2026-02-27T18:53:13.678+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AMZN/1771463651.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463651.json
+[2026-02-27T18:53:14.143+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AMZN/1771463684.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463684.json
+[2026-02-27T18:53:14.615+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AMZN/1771463718.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463718.json
+[2026-02-27T18:53:15.089+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AMZN/1771463750.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463750.json
+[2026-02-27T18:53:15.563+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AMZN/1771463783.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463783.json
+[2026-02-27T18:53:16.038+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AMZN/1771463816.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463816.json
+[2026-02-27T18:53:16.505+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AMZN/1771463849.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463849.json
+[2026-02-27T18:53:16.977+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AMZN/1771463882.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463882.json
+[2026-02-27T18:53:17.449+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AMZN/1771463916.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463916.json
+[2026-02-27T18:53:17.450+0000] {logging_mixin.py:188} INFO - 
+Processing prefix: bronze/MSFT/
+[2026-02-27T18:53:18.165+0000] {logging_mixin.py:188} INFO - Downloaded bronze/MSFT/1771463592.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463592.json
+[2026-02-27T18:53:18.630+0000] {logging_mixin.py:188} INFO - Downloaded bronze/MSFT/1771463625.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463625.json
+[2026-02-27T18:53:19.097+0000] {logging_mixin.py:188} INFO - Downloaded bronze/MSFT/1771463658.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463658.json
+[2026-02-27T18:53:19.569+0000] {logging_mixin.py:188} INFO - Downloaded bronze/MSFT/1771463691.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463691.json
+[2026-02-27T18:53:20.046+0000] {logging_mixin.py:188} INFO - Downloaded bronze/MSFT/1771463724.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463724.json
+[2026-02-27T18:53:20.525+0000] {logging_mixin.py:188} INFO - Downloaded bronze/MSFT/1771463757.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463757.json
+[2026-02-27T18:53:20.998+0000] {logging_mixin.py:188} INFO - Downloaded bronze/MSFT/1771463790.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463790.json
+[2026-02-27T18:53:21.462+0000] {logging_mixin.py:188} INFO - Downloaded bronze/MSFT/1771463823.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463823.json
+[2026-02-27T18:53:21.614+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to None. Terminating instance.
+[2026-02-27T18:53:21.621+0000] {process_utils.py:131} INFO - Sending 15 to group 2937. PIDs of all processes in the group: [2937]
+[2026-02-27T18:53:21.621+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 2937
+[2026-02-27T18:53:21.622+0000] {taskinstance.py:2450} ERROR - Received SIGTERM. Terminating subprocesses.
+[2026-02-27T18:53:21.702+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/s3_to_snowflake.py", line 62, in download_from_s3
+    s3.download_file(s3_bucket, key, local_file)
+  File "/home/airflow/.local/lib/python3.11/site-packages/boto3/s3/inject.py", line 192, in download_file
+    return transfer.download_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/boto3/s3/transfer.py", line 405, in download_file
+    future.result()
+  File "/home/airflow/.local/lib/python3.11/site-packages/s3transfer/futures.py", line 103, in result
+    return self._coordinator.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/s3transfer/futures.py", line 261, in result
+    self._done_event.wait(MAXINT)
+  File "/usr/local/lib/python3.11/threading.py", line 629, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/threading.py", line 327, in wait
+    waiter.acquire()
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 2452, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2026-02-27T18:53:21.718+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=s3_to_snowflake, task_id=download_s3, execution_date=20260227T185200, start_date=20260227T185301, end_date=20260227T185321
+[2026-02-27T18:53:21.738+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 150 for task download_s3 ((psycopg2.errors.ForeignKeyViolation) insert or update on table "task_fail" violates foreign key constraint "task_fail_ti_fkey"
+DETAIL:  Key (dag_id, task_id, run_id, map_index)=(s3_to_snowflake, download_s3, scheduled__2026-02-27T18:52:00+00:00, -1) is not present in table "task_instance".
+
+[SQL: INSERT INTO task_fail (task_id, dag_id, run_id, map_index, start_date, end_date, duration) VALUES (%(task_id)s, %(dag_id)s, %(run_id)s, %(map_index)s, %(start_date)s, %(end_date)s, %(duration)s) RETURNING task_fail.id]
+[parameters: {'task_id': 'download_s3', 'dag_id': 's3_to_snowflake', 'run_id': 'scheduled__2026-02-27T18:52:00+00:00', 'map_index': -1, 'start_date': datetime.datetime(2026, 2, 27, 18, 53, 1, 432955, tzinfo=Timezone('UTC')), 'end_date': datetime.datetime(2026, 2, 27, 18, 53, 21, 717830, tzinfo=Timezone('UTC')), 'duration': 20}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj); 2937)
+[2026-02-27T18:53:21.755+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=2937, status='terminated', exitcode=1, started='18:53:00') (2937) terminated with exit code 1
+[2026-02-27T18:53:33.688+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: s3_to_snowflake.download_s3 scheduled__2026-02-27T18:52:00+00:00 [queued]>
+[2026-02-27T18:53:33.704+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: s3_to_snowflake.download_s3 scheduled__2026-02-27T18:52:00+00:00 [queued]>
+[2026-02-27T18:53:33.705+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2026-02-27T18:53:33.731+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): download_s3> on 2026-02-27 18:52:00+00:00
+[2026-02-27T18:53:33.746+0000] {standard_task_runner.py:60} INFO - Started process 3035 to run task
+[2026-02-27T18:53:33.758+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 's3_to_snowflake', 'download_s3', 'scheduled__2026-02-27T18:52:00+00:00', '--job-id', '151', '--raw', '--subdir', 'DAGS_FOLDER/s3_to_snowflake.py', '--cfg-path', '/tmp/tmp2hrw7viz']
+[2026-02-27T18:53:33.768+0000] {standard_task_runner.py:88} INFO - Job 151: Subtask download_s3
+[2026-02-27T18:53:33.923+0000] {task_command.py:423} INFO - Running <TaskInstance: s3_to_snowflake.download_s3 scheduled__2026-02-27T18:52:00+00:00 [running]> on host 21d6aced11b5
+[2026-02-27T18:53:34.776+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='s3_to_snowflake' AIRFLOW_CTX_TASK_ID='download_s3' AIRFLOW_CTX_EXECUTION_DATE='2026-02-27T18:52:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-27T18:52:00+00:00'
+[2026-02-27T18:53:34.844+0000] {credentials.py:1147} INFO - Found credentials in environment variables.
+[2026-02-27T18:53:35.119+0000] {logging_mixin.py:188} INFO - in the function************************
+[2026-02-27T18:53:35.131+0000] {logging_mixin.py:188} INFO - 
+Processing prefix: bronze/AAPL/
+[2026-02-27T18:53:36.303+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AAPL/1771463612.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463612.json
+[2026-02-27T18:53:36.725+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AAPL/1771463645.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463645.json
+[2026-02-27T18:53:37.146+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AAPL/1771463678.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463678.json
+[2026-02-27T18:53:37.574+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AAPL/1771463711.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463711.json
+[2026-02-27T18:53:38.006+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AAPL/1771463744.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463744.json
+[2026-02-27T18:53:38.433+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AAPL/1771463777.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463777.json
+[2026-02-27T18:53:38.854+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AAPL/1771463810.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463810.json
+[2026-02-27T18:53:39.280+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AAPL/1771463843.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463843.json
+[2026-02-27T18:53:39.709+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AAPL/1771463876.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463876.json
+[2026-02-27T18:53:40.137+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AAPL/1771463909.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AAPL_1771463909.json
+[2026-02-27T18:53:40.137+0000] {logging_mixin.py:188} INFO - 
+Processing prefix: bronze/GOOGL/
+[2026-02-27T18:53:40.780+0000] {logging_mixin.py:188} INFO - Downloaded bronze/GOOGL/1771463605.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463605.json
+[2026-02-27T18:53:41.202+0000] {logging_mixin.py:188} INFO - Downloaded bronze/GOOGL/1771463638.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463638.json
+[2026-02-27T18:53:41.623+0000] {logging_mixin.py:188} INFO - Downloaded bronze/GOOGL/1771463671.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463671.json
+[2026-02-27T18:53:42.050+0000] {logging_mixin.py:188} INFO - Downloaded bronze/GOOGL/1771463704.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463704.json
+[2026-02-27T18:53:42.482+0000] {logging_mixin.py:188} INFO - Downloaded bronze/GOOGL/1771463737.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463737.json
+[2026-02-27T18:53:42.904+0000] {logging_mixin.py:188} INFO - Downloaded bronze/GOOGL/1771463770.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463770.json
+[2026-02-27T18:53:43.331+0000] {logging_mixin.py:188} INFO - Downloaded bronze/GOOGL/1771463803.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463803.json
+[2026-02-27T18:53:43.758+0000] {logging_mixin.py:188} INFO - Downloaded bronze/GOOGL/1771463836.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463836.json
+[2026-02-27T18:53:44.180+0000] {logging_mixin.py:188} INFO - Downloaded bronze/GOOGL/1771463869.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463869.json
+[2026-02-27T18:53:44.609+0000] {logging_mixin.py:188} INFO - Downloaded bronze/GOOGL/1771463902.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/GOOGL_1771463902.json
+[2026-02-27T18:53:44.609+0000] {logging_mixin.py:188} INFO - 
+Processing prefix: bronze/AMZN/
+[2026-02-27T18:53:45.245+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AMZN/1771463619.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463619.json
+[2026-02-27T18:53:45.668+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AMZN/1771463651.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463651.json
+[2026-02-27T18:53:46.091+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AMZN/1771463684.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463684.json
+[2026-02-27T18:53:46.515+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AMZN/1771463718.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463718.json
+[2026-02-27T18:53:46.998+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AMZN/1771463750.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463750.json
+[2026-02-27T18:53:47.419+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AMZN/1771463783.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463783.json
+[2026-02-27T18:53:47.846+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AMZN/1771463816.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463816.json
+[2026-02-27T18:53:48.269+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AMZN/1771463849.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463849.json
+[2026-02-27T18:53:48.697+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AMZN/1771463882.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463882.json
+[2026-02-27T18:53:49.118+0000] {logging_mixin.py:188} INFO - Downloaded bronze/AMZN/1771463916.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/AMZN_1771463916.json
+[2026-02-27T18:53:49.119+0000] {logging_mixin.py:188} INFO - 
+Processing prefix: bronze/MSFT/
+[2026-02-27T18:53:49.756+0000] {logging_mixin.py:188} INFO - Downloaded bronze/MSFT/1771463592.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463592.json
+[2026-02-27T18:53:50.183+0000] {logging_mixin.py:188} INFO - Downloaded bronze/MSFT/1771463625.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463625.json
+[2026-02-27T18:53:50.609+0000] {logging_mixin.py:188} INFO - Downloaded bronze/MSFT/1771463658.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463658.json
+[2026-02-27T18:53:51.037+0000] {logging_mixin.py:188} INFO - Downloaded bronze/MSFT/1771463691.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463691.json
+[2026-02-27T18:53:51.461+0000] {logging_mixin.py:188} INFO - Downloaded bronze/MSFT/1771463724.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463724.json
+[2026-02-27T18:53:51.879+0000] {logging_mixin.py:188} INFO - Downloaded bronze/MSFT/1771463757.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463757.json
+[2026-02-27T18:53:52.300+0000] {logging_mixin.py:188} INFO - Downloaded bronze/MSFT/1771463790.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463790.json
+[2026-02-27T18:53:52.721+0000] {logging_mixin.py:188} INFO - Downloaded bronze/MSFT/1771463823.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463823.json
+[2026-02-27T18:53:53.141+0000] {logging_mixin.py:188} INFO - Downloaded bronze/MSFT/1771463856.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463856.json
+[2026-02-27T18:53:53.567+0000] {logging_mixin.py:188} INFO - Downloaded bronze/MSFT/1771463889.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/MSFT_1771463889.json
+[2026-02-27T18:53:53.567+0000] {logging_mixin.py:188} INFO - 
+Processing prefix: bronze/TSLA/
+[2026-02-27T18:53:54.204+0000] {logging_mixin.py:188} INFO - Downloaded bronze/TSLA/1771463599.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463599.json
+[2026-02-27T18:53:54.627+0000] {logging_mixin.py:188} INFO - Downloaded bronze/TSLA/1771463632.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463632.json
+[2026-02-27T18:53:55.059+0000] {logging_mixin.py:188} INFO - Downloaded bronze/TSLA/1771463665.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463665.json
+[2026-02-27T18:53:55.486+0000] {logging_mixin.py:188} INFO - Downloaded bronze/TSLA/1771463698.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463698.json
+[2026-02-27T18:53:55.917+0000] {logging_mixin.py:188} INFO - Downloaded bronze/TSLA/1771463731.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463731.json
+[2026-02-27T18:53:56.337+0000] {logging_mixin.py:188} INFO - Downloaded bronze/TSLA/1771463764.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463764.json
+[2026-02-27T18:53:56.764+0000] {logging_mixin.py:188} INFO - Downloaded bronze/TSLA/1771463797.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463797.json
+[2026-02-27T18:53:57.659+0000] {logging_mixin.py:188} INFO - Downloaded bronze/TSLA/1771463830.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463830.json
+[2026-02-27T18:53:58.086+0000] {logging_mixin.py:188} INFO - Downloaded bronze/TSLA/1771463862.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463862.json
+[2026-02-27T18:53:58.518+0000] {logging_mixin.py:188} INFO - Downloaded bronze/TSLA/1771463895.json -> D:\ADF_folder\real-time-stocks-mds\data\s3_downloads/TSLA_1771463895.json
+[2026-02-27T18:53:58.520+0000] {python.py:201} INFO - Done. Returned value was: ['D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/AAPL_1771463612.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/AAPL_1771463645.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/AAPL_1771463678.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/AAPL_1771463711.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/AAPL_1771463744.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/AAPL_1771463777.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/AAPL_1771463810.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/AAPL_1771463843.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/AAPL_1771463876.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/AAPL_1771463909.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/GOOGL_1771463605.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/GOOGL_1771463638.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/GOOGL_1771463671.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/GOOGL_1771463704.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/GOOGL_1771463737.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/GOOGL_1771463770.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/GOOGL_1771463803.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/GOOGL_1771463836.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/GOOGL_1771463869.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/GOOGL_1771463902.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/AMZN_1771463619.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/AMZN_1771463651.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/AMZN_1771463684.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/AMZN_1771463718.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/AMZN_1771463750.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/AMZN_1771463783.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/AMZN_1771463816.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/AMZN_1771463849.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/AMZN_1771463882.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/AMZN_1771463916.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/MSFT_1771463592.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/MSFT_1771463625.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/MSFT_1771463658.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/MSFT_1771463691.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/MSFT_1771463724.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/MSFT_1771463757.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/MSFT_1771463790.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/MSFT_1771463823.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/MSFT_1771463856.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/MSFT_1771463889.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/TSLA_1771463599.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/TSLA_1771463632.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/TSLA_1771463665.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/TSLA_1771463698.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/TSLA_1771463731.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/TSLA_1771463764.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/TSLA_1771463797.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/TSLA_1771463830.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/TSLA_1771463862.json', 'D:\\ADF_folder\\real-time-stocks-mds\\data\\s3_downloads/TSLA_1771463895.json']
+[2026-02-27T18:53:58.545+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=s3_to_snowflake, task_id=download_s3, execution_date=20260227T185200, start_date=20260227T185333, end_date=20260227T185358
+[2026-02-27T18:53:58.603+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-02-27T18:53:58.620+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

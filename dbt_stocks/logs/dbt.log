@@ -1,0 +1,170 @@
+[0m17:39:45.912810 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022062505F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220647C0340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220647C0160>]}
+
+
+============================== 17:39:45.912810 | 63a71692-7971-4214-97b0-af9014ae56b8 ==============================
+[0m17:39:45.912810 [info ] [MainThread]: Running with dbt=1.11.6
+[0m17:39:45.922995 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\AshwiniMehendale\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt init dbt_stocks', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m17:39:45.960093 [debug] [MainThread]: Starter project path: D:\ADF_folder\real-time-stocks-mds\venv\lib\site-packages\dbt\include\starter_project
+[0m17:39:45.986676 [info ] [MainThread]: 
+Your new dbt project "dbt_stocks" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m17:39:45.988329 [info ] [MainThread]: Setting up your profile.
+[0m17:39:59.269125 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m17:39:59.269125 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m17:39:59.269125 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m17:41:18.080578 [info ] [MainThread]: Profile dbt_stocks written to C:\Users\AshwiniMehendale\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m17:41:18.082933 [debug] [MainThread]: Command `dbt init` succeeded at 17:41:18.081580 after 92.31 seconds
+[0m17:41:18.082933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022062505F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220647C0A30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220647C0070>]}
+[0m17:41:18.084440 [debug] [MainThread]: Flushing usage events
+[0m17:41:19.187191 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:41:32.037495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000168D34E5F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000168D57A0340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000168D57A0160>]}
+
+
+============================== 17:41:32.043785 | 6ad31ec0-5f47-4995-863e-89f2ccb17ef6 ==============================
+[0m17:41:32.043785 [info ] [MainThread]: Running with dbt=1.11.6
+[0m17:41:32.043785 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\AshwiniMehendale\\.dbt', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m17:41:32.068403 [info ] [MainThread]: dbt version: 1.11.6
+[0m17:41:32.069777 [info ] [MainThread]: python version: 3.10.9
+[0m17:41:32.069777 [info ] [MainThread]: python path: D:\ADF_folder\real-time-stocks-mds\venv\Scripts\python.exe
+[0m17:41:32.069777 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m17:41:32.579355 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m17:41:32.579355 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m17:41:32.579355 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m17:41:32.673779 [info ] [MainThread]: Using profiles dir at C:\Users\AshwiniMehendale\.dbt
+[0m17:41:32.673779 [info ] [MainThread]: Using profiles.yml file at C:\Users\AshwiniMehendale\.dbt\profiles.yml
+[0m17:41:32.673779 [info ] [MainThread]: Using dbt_project.yml file at D:\ADF_folder\real-time-stocks-mds\dbt_stocks\dbt_project.yml
+[0m17:41:32.673779 [info ] [MainThread]: adapter type: snowflake
+[0m17:41:32.673779 [info ] [MainThread]: adapter version: 1.11.2
+[0m17:41:32.673779 [info ] [MainThread]: Configuration:
+[0m17:41:32.673779 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:41:32.685182 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m17:41:32.685933 [info ] [MainThread]: Required dependencies:
+[0m17:41:32.687653 [debug] [MainThread]: Executing "git --help"
+[0m17:41:32.697149 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m17:41:32.700937 [info ] [MainThread]: Connection:
+[0m17:41:32.701948 [info ] [MainThread]:   account: kj92404.me-central-1.aws
+[0m17:41:32.702951 [info ] [MainThread]:   user: ashwinidmsf
+[0m17:41:32.704463 [info ] [MainThread]:   database: STOCKS_MDS
+[0m17:41:32.705517 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m17:41:32.707117 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m17:41:32.707117 [info ] [MainThread]:   schema: COMMON
+[0m17:41:32.708117 [info ] [MainThread]:   authenticator: None
+[0m17:41:32.710520 [info ] [MainThread]:   oauth_client_id: None
+[0m17:41:32.711533 [info ] [MainThread]:   query_tag: None
+[0m17:41:32.713668 [info ] [MainThread]:   client_session_keep_alive: False
+[0m17:41:32.714683 [info ] [MainThread]:   host: None
+[0m17:41:32.714683 [info ] [MainThread]:   port: None
+[0m17:41:32.714683 [info ] [MainThread]:   proxy_host: None
+[0m17:41:32.717571 [info ] [MainThread]:   proxy_port: None
+[0m17:41:32.718581 [info ] [MainThread]:   protocol: None
+[0m17:41:32.719584 [info ] [MainThread]:   connect_retries: 1
+[0m17:41:32.721584 [info ] [MainThread]:   connect_timeout: None
+[0m17:41:32.722582 [info ] [MainThread]:   retry_on_database_errors: False
+[0m17:41:32.724252 [info ] [MainThread]:   retry_all: False
+[0m17:41:32.725295 [info ] [MainThread]:   insecure_mode: False
+[0m17:41:32.728054 [info ] [MainThread]:   reuse_connections: True
+[0m17:41:32.729055 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m17:41:32.729055 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m17:41:32.729055 [info ] [MainThread]: Registered adapter: snowflake=1.11.2
+[0m17:41:33.151807 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m17:41:33.255703 [debug] [MainThread]: Using snowflake connection "debug"
+[0m17:41:33.255703 [debug] [MainThread]: On debug: select 1 as id
+[0m17:41:33.255703 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:41:34.957224 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.703 seconds
+[0m17:41:34.957224 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m17:41:34.963520 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m17:41:34.963520 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\ADF_folder\real-time-stocks-mds\dbt_stocks\dbt_project.yml> not found
+
+[0m17:41:34.963520 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m17:41:34.963520 [debug] [MainThread]: Command `dbt debug` failed at 17:41:34.963520 after 3.04 seconds
+[0m17:41:34.963520 [debug] [MainThread]: Connection 'debug' was left open.
+[0m17:41:34.967297 [debug] [MainThread]: On debug: Close
+[0m17:41:35.306015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000168D34E5F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000168D6492350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000168D603D690>]}
+[0m17:41:35.306015 [debug] [MainThread]: Flushing usage events
+[0m17:41:36.335437 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:47:06.154952 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011F29195F60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011F2B4503D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011F2B4501F0>]}
+
+
+============================== 17:47:06.154952 | 8bef7f3a-3824-42dc-bf36-ab3c5786d6a0 ==============================
+[0m17:47:06.154952 [info ] [MainThread]: Running with dbt=1.11.6
+[0m17:47:06.154952 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\AshwiniMehendale\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m17:47:06.173568 [info ] [MainThread]: dbt version: 1.11.6
+[0m17:47:06.173568 [info ] [MainThread]: python version: 3.10.9
+[0m17:47:06.173568 [info ] [MainThread]: python path: D:\ADF_folder\real-time-stocks-mds\venv\Scripts\python.exe
+[0m17:47:06.173568 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m17:47:06.480760 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m17:47:06.480760 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m17:47:06.480760 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m17:47:06.543656 [info ] [MainThread]: Using profiles dir at C:\Users\AshwiniMehendale\.dbt
+[0m17:47:06.544256 [info ] [MainThread]: Using profiles.yml file at C:\Users\AshwiniMehendale\.dbt\profiles.yml
+[0m17:47:06.544256 [info ] [MainThread]: Using dbt_project.yml file at D:\ADF_folder\real-time-stocks-mds\dbt_stocks\dbt_project.yml
+[0m17:47:06.544256 [info ] [MainThread]: adapter type: snowflake
+[0m17:47:06.544256 [info ] [MainThread]: adapter version: 1.11.2
+[0m17:47:06.544256 [info ] [MainThread]: Configuration:
+[0m17:47:06.544256 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:47:06.544256 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m17:47:06.544256 [info ] [MainThread]: Required dependencies:
+[0m17:47:06.544256 [debug] [MainThread]: Executing "git --help"
+[0m17:47:06.558754 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m17:47:06.559803 [info ] [MainThread]: Connection:
+[0m17:47:06.561697 [info ] [MainThread]:   account: kj92404.me-central-1.aws
+[0m17:47:06.561697 [info ] [MainThread]:   user: ashwinidmsf
+[0m17:47:06.561697 [info ] [MainThread]:   database: STOCKS_MDS
+[0m17:47:06.561697 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m17:47:06.564496 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m17:47:06.564496 [info ] [MainThread]:   schema: COMMON
+[0m17:47:06.565100 [info ] [MainThread]:   authenticator: None
+[0m17:47:06.565933 [info ] [MainThread]:   oauth_client_id: None
+[0m17:47:06.566490 [info ] [MainThread]:   query_tag: None
+[0m17:47:06.566490 [info ] [MainThread]:   client_session_keep_alive: False
+[0m17:47:06.567546 [info ] [MainThread]:   host: None
+[0m17:47:06.567546 [info ] [MainThread]:   port: None
+[0m17:47:06.568495 [info ] [MainThread]:   proxy_host: None
+[0m17:47:06.568495 [info ] [MainThread]:   proxy_port: None
+[0m17:47:06.568495 [info ] [MainThread]:   protocol: None
+[0m17:47:06.569494 [info ] [MainThread]:   connect_retries: 1
+[0m17:47:06.569494 [info ] [MainThread]:   connect_timeout: None
+[0m17:47:06.570377 [info ] [MainThread]:   retry_on_database_errors: False
+[0m17:47:06.570377 [info ] [MainThread]:   retry_all: False
+[0m17:47:06.570377 [info ] [MainThread]:   insecure_mode: False
+[0m17:47:06.570377 [info ] [MainThread]:   reuse_connections: True
+[0m17:47:06.570377 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m17:47:06.570377 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m17:47:06.570377 [info ] [MainThread]: Registered adapter: snowflake=1.11.2
+[0m17:47:06.824796 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m17:47:06.897569 [debug] [MainThread]: Using snowflake connection "debug"
+[0m17:47:06.897569 [debug] [MainThread]: On debug: select 1 as id
+[0m17:47:06.897569 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:47:08.474103 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.574 seconds
+[0m17:47:08.476577 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m17:47:08.477654 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m17:47:08.478604 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\ADF_folder\real-time-stocks-mds\dbt_stocks\dbt_project.yml> not found
+
+[0m17:47:08.479518 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m17:47:08.480524 [debug] [MainThread]: Command `dbt debug` failed at 17:47:08.480524 after 2.41 seconds
+[0m17:47:08.481525 [debug] [MainThread]: Connection 'debug' was left open.
+[0m17:47:08.481525 [debug] [MainThread]: On debug: Close
+[0m17:47:08.810989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011F29195F60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011F2D112E00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011F2BCED6C0>]}
+[0m17:47:08.815568 [debug] [MainThread]: Flushing usage events
+[0m17:47:09.957394 [debug] [MainThread]: An error was encountered while trying to flush usage events
